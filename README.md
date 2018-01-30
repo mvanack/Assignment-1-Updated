@@ -15,14 +15,14 @@ Download the following data files from the internet using the `curl` command: ht
 I referenced [this](https://unix.stackexchange.com/questions/) website to get information on how to write a curl download into a file because I was unable to download the file using curl.  However once I added in -0 and assigned the output to a file the curl command successfully pulled both the files from the lab website.   
 
 ```python
-> curl -o test.fastq.gz "http://eaton-lab.org/pdsb/test.fastq.gz"
-> gunzip -d test.fast.gz
-> less test.fast
-> head test.fast
+  curl -o test.fastq.gz "http://eaton-lab.org/pdsb/test.fastq.gz"
+  gunzip -d test.fast.gz
+  less test.fast
+  head test.fast
 
-> curl -0 http://eaton-lab.org/pdsb/iris-data-dirty.csv >>iris-data-dirty.csv
-> less iris-data-dirty.csv
-> head iris-data-dirty.csv
+  curl -0 http://eaton-lab.org/pdsb/iris-data-dirty.csv >>iris-data-dirty.csv
+  less iris-data-dirty.csv
+  head iris-data-dirty.csv
 ```
 
 ### II. Clean the data  
